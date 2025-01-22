@@ -25,7 +25,7 @@ public class Ejemplo08 {
             double resultado2 = (double)resultado;
             System.out.printf("Resultado %.2f", resultado2);
         }
-        catch(Exception e){
+        catch(Exception e){ // detect cualquier tipo de excepcion
             
             System.out.printf(" Lo sentimos hay un error de tipo %s\n", e);
         

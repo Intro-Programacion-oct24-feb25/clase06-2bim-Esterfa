@@ -36,7 +36,7 @@ public class Ejemplo07 {
             System.out.printf("De tipo %s\n", arithmeticException);
         
         }
-        catch(Exception e){
+        catch(Exception e){  // si se pone primero tiene prioridad
             
             System.out.printf(" Lo sentimos hay un error de tipo %s\n", e);
         
