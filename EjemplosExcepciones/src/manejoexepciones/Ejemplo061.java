@@ -5,6 +5,7 @@
  */
 package manejoexepciones;
 
+import java.util.IllegalFormatConversionException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -12,26 +13,25 @@ import java.util.Scanner;
  *
  * @author reroes﻿​_
  */
-public class Ejemplo04 {
-
+public class Ejemplo061 {
+    
     public static void main(String[] args) {
-        
-        try {
+      //  try{   
             Scanner entrada = new Scanner(System.in);
             System.out.println("Ingrese valor 1:");
             int valor1 = entrada.nextInt(); // se espera un valor entero
             System.out.println("Ingrese valor 2:");
             int valor2 = entrada.nextInt(); // se espera un valor entero
             int resultado = valor1 / valor2;
-
-            System.out.printf("Resultado %d", resultado);
-        } catch (InputMismatchException inputMismatchException) { //se podria usar otro catch si saliera otro tipo de error java.lang.ArithmeticException
-                      // valor tipo de dato el primero y la variable el segundo
-            System.out.printf("Existe un error de tipo %s\n",
-                    inputMismatchException);
-        }
+            double resultado2 = (double)resultado;
+            System.out.printf("Resultado %d", resultado2);
+     //   }
+       
         
-        System.out.println("Continuamos");
-
+      //  catch(IllegalFormatConversionException i){
+       //     System.out.println("Lo sentimos hay un error");
+       //     System.out.printf("De tipo %s\n", i);
+       // }
+               
     }
 }

@@ -12,7 +12,7 @@ package manejoexepciones;
 public class Ejemplo03 {
     
     public static void main(String[] args) {
-        try{
+        try{    //  permite capturar alguna excepcion
             int valor1 = 10;
             int valor2 = 0;
             int resultado = valor1 / valor2;
